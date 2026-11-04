@@ -641,7 +641,7 @@ export default function BecomeAVendorPage() {
         <div className="vendor-cta">
           <Headset size={35} />
 
-          <h2>Let's Talk About Your Business.</h2>
+          <h2>Let&apos;s Talk About Your Business.</h2>
 
           <p>
             Interested in becoming one of the businesses on KAVORA?
