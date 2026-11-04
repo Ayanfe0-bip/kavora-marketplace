@@ -73,7 +73,7 @@ export default function Error({
             marginBottom: "28px",
           }}
         >
-          We couldn't complete your request right now.
+        We couldn&apos;t complete your request right now.
           Please try again. Your shopping experience
           matters to us.
         </p>
