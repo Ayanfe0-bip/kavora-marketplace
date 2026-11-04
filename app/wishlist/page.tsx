@@ -571,7 +571,7 @@ export default function WishlistPage() {
             <h2>Your wishlist is empty</h2>
 
             <p>
-              You haven't saved any products yet. Explore KAVORA
+              You haven&apos;t saved any products yet. Explore KAVORA
               and discover products you would love to keep.
             </p>
 
