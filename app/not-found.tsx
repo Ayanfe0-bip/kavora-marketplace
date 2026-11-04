@@ -72,9 +72,9 @@ export default function NotFound() {
             marginBottom: "30px",
           }}
         >
-          The page you're looking for may have moved,
+          The page you&apos;re looking for may have moved,
           been removed, or may not exist yet.
-          Let's get you back to discovering something great.
+          Let&apos;s get you back to discovering something great.
         </p>
 
         <div
