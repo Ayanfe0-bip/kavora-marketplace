@@ -630,7 +630,7 @@ export default async function SellerStorePage({
           <h2>About this shop</h2>
           <p>{shop.description}</p>
           <p>
-            Browse this seller's collections on KAVORA. Product ordering,
+            Browse this seller&apos;s collections on KAVORA. Product ordering,
             seller messaging and checkout will become available as the
             marketplace features are implemented.
           </p>
