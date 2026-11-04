@@ -244,9 +244,8 @@ export default function ProductsPage() {
               lineHeight: 1.9,
             }}
           >
-            We're preparing the KAVORA product catalogue.
-            Soon, you'll be able to explore real products,
-            compare options and discover sellers.
+            We&apos;re preparing the KAVORA product catalogue.
+Soon, you&apos;ll be able to explore real products,
           </p>
 
           <Link
