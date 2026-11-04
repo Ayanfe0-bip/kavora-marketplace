@@ -621,7 +621,3 @@ export default function OrdersPage() {
     </main>
   );
 }
-
-function formatPrice(price: number) {
-  return `₦${price.toLocaleString("en-NG")}`;
-}
