@@ -485,9 +485,9 @@ export default function FAQPage() {
           <h2>Still have questions?</h2>
 
           <p>
-            Can't find the answer you're looking for? Contact the KAVORA
-            team and we'll be happy to hear from you.
-          </p>
+  Can&apos;t find the answer you&apos;re looking for? Contact the KAVORA
+  team and we&apos;ll be happy to hear from you.
+</p>
 
           <Link href="/contact">
             Contact Our Team
