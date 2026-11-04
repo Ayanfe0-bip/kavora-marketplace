@@ -690,7 +690,7 @@ export default async function SearchPage({
                 <h3>No products found</h3>
 
                 <p>
-                  We couldn't find products matching your search. Try another
+                  We couldn&apos;t find products matching your search. Try another
                   keyword or remove some filters.
                 </p>
 
