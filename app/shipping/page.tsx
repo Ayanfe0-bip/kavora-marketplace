@@ -680,7 +680,7 @@ export default function ShippingPage() {
           <h2>Have a Delivery Question?</h2>
 
           <p>
-            Contact our team for general enquiries about KAVORA's
+            Contact our team for general enquiries about KAVORA&apos;s
             delivery plans, vendor participation or marketplace
             development.
           </p>
