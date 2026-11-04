@@ -325,6 +325,12 @@ export default async function SearchPage({
           font-size: 12px;
         }
 
+        .sort-form {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
         .sort-select {
           max-width: 160px;
           padding: 11px;
@@ -334,6 +340,17 @@ export default async function SearchPage({
           color: #59647b;
           font-size: 11px;
           outline: none;
+        }
+
+        .sort-button {
+          padding: 11px 14px;
+          border: 0;
+          border-radius: 9px;
+          background: #7655e8;
+          color: white;
+          font-size: 11px;
+          font-weight: 900;
+          cursor: pointer;
         }
 
         .results-grid {
@@ -410,6 +427,7 @@ export default async function SearchPage({
           margin-bottom: 14px;
           color: #788195;
           font-size: 10px;
+          flex-wrap: wrap;
         }
 
         .result-view {
@@ -495,7 +513,11 @@ export default async function SearchPage({
           .search-nav a { font-size: 11px; }
           .search-hero { padding: 25px 20px; }
           .search-content { padding-top: 30px; }
-          .results-heading { align-items: start; flex-direction: column; }
+          .results-heading {
+            align-items: start;
+            flex-direction: column;
+          }
+          .sort-form { width: 100%; }
           .results-grid { grid-template-columns: 1fr; }
           .result-image { height: 190px; }
         }
@@ -521,12 +543,14 @@ export default async function SearchPage({
 
         <section className="search-hero">
           <h1>Find what you're looking for.</h1>
+
           <p>
             Search products, explore categories and discover sellers on KAVORA.
           </p>
 
           <form action="/search" method="GET" className="search-form">
             <Search size={19} color="#8991a3" />
+
             <input
               type="search"
               name="q"
@@ -534,6 +558,7 @@ export default async function SearchPage({
               placeholder="What are you looking for?"
               aria-label="Search products"
             />
+
             <button type="submit">Search</button>
           </form>
         </section>
@@ -551,7 +576,8 @@ export default async function SearchPage({
               {categories.map((category) => {
                 const href =
                   `/search?q=${encodeURIComponent(query)}` +
-                  `&category=${encodeURIComponent(category)}`;
+                  `&category=${encodeURIComponent(category)}` +
+                  `&sort=${encodeURIComponent(sort)}`;
 
                 return (
                   <Link
@@ -570,7 +596,10 @@ export default async function SearchPage({
             <div className="filter-divider" />
 
             <Link href="/search" className="filter-clear">
-              <X size={13} style={{ display: "inline", marginRight: 5 }} />
+              <X
+                size={13}
+                style={{ display: "inline", marginRight: 5 }}
+              />
               Clear all filters
             </Link>
           </aside>
@@ -579,6 +608,7 @@ export default async function SearchPage({
             <div className="results-heading">
               <div>
                 <h2>Search Results</h2>
+
                 <p>
                   {results.length} product
                   {results.length === 1 ? "" : "s"} found
@@ -586,8 +616,9 @@ export default async function SearchPage({
                 </p>
               </div>
 
-              <form action="/search" method="GET">
+              <form action="/search" method="GET" className="sort-form">
                 <input type="hidden" name="q" value={query} />
+
                 <input
                   type="hidden"
                   name="category"
@@ -599,12 +630,15 @@ export default async function SearchPage({
                   name="sort"
                   defaultValue={sort}
                   aria-label="Sort products"
-                  onChange={(event) => event.currentTarget.form?.requestSubmit()}
                 >
                   <option value="relevance">Most relevant</option>
                   <option value="low">Price: Low to high</option>
                   <option value="high">Price: High to low</option>
                 </select>
+
+                <button type="submit" className="sort-button">
+                  Apply
+                </button>
               </form>
             </div>
 
@@ -652,11 +686,14 @@ export default async function SearchPage({
             ) : (
               <div className="no-results">
                 <ShoppingBag size={38} />
+
                 <h3>No products found</h3>
+
                 <p>
                   We couldn't find products matching your search. Try another
                   keyword or remove some filters.
                 </p>
+
                 <Link href="/search">View all products</Link>
               </div>
             )}
@@ -670,9 +707,10 @@ export default async function SearchPage({
             © {new Date().getFullYear()} KAVORA Marketplace. All rights
             reserved.
           </p>
+
           <p>Created by Ayanfe Innovation Labs Limited.</p>
         </div>
       </footer>
     </main>
   );
-    }
+}
