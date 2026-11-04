@@ -704,7 +704,7 @@ export default function CartPage() {
             <h2>Your cart is empty</h2>
 
             <p>
-              You haven't added any products yet. Discover
+              You haven&apos;t added any products yet. Discover
               something you love and add it to your shopping cart.
             </p>
 
