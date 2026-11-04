@@ -471,7 +471,7 @@ export default function SupportPage() {
           </div>
 
           <h1>
-            We're Here to <span>Help.</span>
+            We&apos;re Here to <span>Help.</span>
           </h1>
 
           <p>
@@ -625,7 +625,7 @@ export default function SupportPage() {
         <section className="support-bottom">
           <Headset size={36} />
 
-          <h2>We're Listening.</h2>
+          <h2>We&apos;re Listening.</h2>
 
           <p>
             Your questions, feedback and suggestions help us build a
