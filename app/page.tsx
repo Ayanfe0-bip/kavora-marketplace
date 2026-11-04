@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -86,9 +87,9 @@ export default function Home() {
           className="container flex-between"
           style={{ minHeight: "82px", gap: "24px" }}
         >
-          <a href="/" className="brand-text" style={{ fontSize: "27px" }}>
-            KAVORA<span style={{ color: "#c69b55" }}>.</span>
-          </a>
+          <Link href="/" className="brand-text" style={{ fontSize: "27px" }}>
+  KAVORA<span style={{ color: "#c69b55" }}>.</span>
+</Link>
 
           <nav
             style={{
