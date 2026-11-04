@@ -458,7 +458,7 @@ export default function ContactPage() {
 
           <p>
             Whether you are a customer, business owner or potential partner,
-            we're happy to hear from you. Reach out and let's connect.
+            we&apos;re happy to hear from you. Reach out and let&apos;s connect.
           </p>
         </div>
       </section>
