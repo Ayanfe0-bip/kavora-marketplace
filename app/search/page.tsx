@@ -542,7 +542,7 @@ export default async function SearchPage({
         </Link>
 
         <section className="search-hero">
-          <h1>Find what you're looking for.</h1>
+          <h1>Find what you&apos;re looking for.</h1>
 
           <p>
             Search products, explore categories and discover sellers on KAVORA.
