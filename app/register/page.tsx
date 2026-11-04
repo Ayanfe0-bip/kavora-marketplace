@@ -199,7 +199,7 @@ export default function RegisterPage() {
               />
 
               <span>
-                I agree to KAVORA's{" "}
+                I agree to KAVORA&apos;s{" "}
                 <Link href="/terms">Terms and Conditions</Link> and{" "}
                 <Link href="/privacy">Privacy Policy</Link>.
               </span>
