@@ -702,4 +702,91 @@ export default function Home() {
                   fontSize: "12px",
                 }}
               >
-                <a href="#categori
+                                <a href="#categories">Categories</a>
+                <a href="#featured">Featured products</a>
+                <a href="#vendors">Become a seller</a>
+              </div>
+            </div>
+
+            <div>
+              <h3 style={{ fontSize: "14px", marginBottom: "17px" }}>
+                Company
+              </h3>
+
+              <p
+                style={{
+                  color: "#aeb5c5",
+                  fontSize: "12px",
+                  lineHeight: 1.9,
+                }}
+              >
+                A product of
+                <br />
+                Ayanfe Innovation Labs Limited.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              borderTop: "1px solid #34405a",
+              paddingTop: "22px",
+              color: "#929bad",
+              fontSize: "11px",
+              display: "flex",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              gap: "12px",
+            }}
+          >
+            <span>
+              © {new Date().getFullYear()} KAVORA. All rights reserved.
+            </span>
+
+            <span>
+              Created by Ayanfe Innovation Labs Limited.
+            </span>
+          </div>
+        </div>
+      </footer>
+
+      <style>{`
+        @media (max-width: 760px) {
+          header nav {
+            display: none !important;
+          }
+
+          header .container {
+            min-height: 70px !important;
+          }
+
+          header .container > div:last-child a:first-child {
+            display: none;
+          }
+
+          header .container > div:last-child a:last-child {
+            font-size: 11px;
+          }
+
+          footer .container > div:first-child {
+            grid-template-columns: 1fr 1fr !important;
+          }
+
+          footer .container > div:first-child > div:first-child {
+            grid-column: 1 / -1;
+          }
+        }
+
+        @media (max-width: 420px) {
+          .brand-text {
+            font-size: 23px !important;
+          }
+
+          header .button {
+            padding: 10px 11px !important;
+          }
+        }
+      `}</style>
+    </main>
+  );
+}
